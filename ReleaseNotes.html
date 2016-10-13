@@ -1,0 +1,196 @@
+﻿<div style="width: 100%; height: 242px; display: block; overflow-y: scroll;">
+    <div style="display: block;">
+        <h3>Aricie.Shared release notes</h3>
+        <h4>Version 1.9.5</h4>
+        <ul>
+            <li>Settings serialization patched</li>
+        </ul>
+        <h4>Version 1.9.4</h4>
+        <ul>
+            <li>New: Config entities can be serialized to Json</li>
+            <li>Improved: Conditional Visibility supports IEnabled entities</li>
+            <li>Improved: Collections support insertion in property editor</li>
+            <li>Fixed: Collections pager in property editor</li>
+            <li>Fixed: Hardened Streaming Proxy</li>
+        </ul>
+        <h4>Version 1.9.3</h4>
+        <ul>
+            <li>New: Expression String filter supports custom Tokens and Markdown syntax parsing</li>
+            <li>Improved:Xml and Json compacification</li>
+            <li>Improved: autocompletetextbox: add value in params of additionalselectfunction</li>
+            <li>Improved: Sublists with multiple array indices support in Expression-to-Tokens conversion, with corresponding hierarchical navigation in the UI</li>
+            <li>Fixed: Html Input Date TextChanged event could result in a loop</li>
+            <li>Fixed: Simple type name handling</li>
+            <li>Fixed: Json Deserialization</li>
+            <li>Fixed: live PathInfo computation crashing UI</li>
+        </ul>
+        <h4>Version 1.9.2</h4>
+        <ul>
+            <li>Improved: Serializable List, Dictionary and Object types and CData type can be serialized into json</li>
+            <li>Improved: Compact Serialization of Static and Dynamic Objects in XML and JSON</li>
+            <li>Improved: String Filter options to split, reverse or escape a string</li>
+            <li>Improved: DNN 8 Compatible</li>
+            <li>Improved: Variables can target subtypes and get instantiated by static calls</li>
+            <li>Improved: Categorization type can build compound regex or Radix tree for optimal performances </li>
+            <li>Improved: Tighten Advanced Token Replace regex expressions to support javascript</li>
+            <li>Fixed: Localized Input Date control</li>
+            <li>Fixed: Autocomplete textbox</li>
+            <li>Fixed: Removed trimming from CData conversion</li>
+        </ul>
+        <h4>Version 1.9.1</h4>
+        <ul>
+            <li>Improved: Optimized auto surrogate feature</li>
+            <li>Improved: Extended HttpInternals reach with file change notifications</li>
+            <li>Improved: Added general property source to advanced token replace</li>
+            <li>Improved: Extended Variable Strategy scope used with Radix tree</li>
+            <li>Improved: NoFlag attribute for more flexibility with Flags enumerations in Property Editor</li>
+            <li>Fixed: DnnContext Culture and IP Address</li>
+            <li>Fixed: extended Clear cache support to recent versions</li>
+            <li>Fixed: Some inheritence issue with XmlSerialization</li>
+        </ul>
+        <h4>Version 1.9.0</h4>
+        <ul>
+            <li>New: Property Editor Collections have additional Cut command</li>
+            <li>New: SessionCloningJob provide quick delayed cloning entity into session for extended reversible editing</li>
+            <li>Improved: HttpInternals provide wider access to file monitoring</li>
+            <li>Improved: extended surrogate capabilities</li>
+            <li>Improved: XmlSerializer supports recompiled types</li>
+            <li>Fixed: Deleted paths exceptions not displayed in release mode</li>
+            <li>Fixed: Synchronized Dynamic Types compilation</li>
+            <li>Fixed: error message from item created and deleted only pops in Debug mode</li>
+        </ul>
+        <h4>Version 1.8.9</h4>
+        <ul>
+            <li>Improved: Autocomplete Textbox capabilities</li>
+            <li>Improved: Property Editor accessibility (tooltips, enable/disable toggles, dictionary entry headers etc.)</li>
+            <li>Fixed: Workaround to a DNN bug (DNN-7652) in Portal Settings logic</li>
+            <li>Fixed: Streaming proxy had a bug with empty application paths</li>
+            <li>Fixed: Inner messages were eaten up in case of late databinding after data changes</li>
+            <li>Fixed: Some naming container issues, where command button had to be clicked twice to operate</li>
+        </ul>
+        <h4>Version 1.8.8</h4>
+        <ul>
+            <li>New: Culture aware converters for Custom Object to and from Dictionaries</li>
+            <li>New: Custom Type maker from arbitrary variables</li>
+            <li>Improved: Trivial variable expressions are not compiled and directly returned</li>
+            <li>Fixed: Some minor bugs in general variable and object actions</li>
+        </ul>
+        <h4>Version 1.8.7</h4>
+        <ul>
+            <li>New: Streaming Http proxy Handler to bypass same-origin policy and support external resources without CORS Http headers</li>
+            <li>New: Bandwidth throttling Stream</li>
+            <li>Improved: Output Caching Strategy now supports toggling dynamic compression and bandwidth throttling</li>
+            <li>Improved: XPath queries now support Dynamic Expressions, Namespace manager, and default namespaces prefix overrides (see https://msdn.microsoft.com/en-us/library/e5t11tzt.aspx )</li>
+            <li>Improved: Flee Expressions now support variables with non visible types by resolving them to the closest visible base type</li>
+        </ul>
+        <h4>Version 1.8.6</h4>
+        <ul>
+            <li>New : Added 304 status code support to Output strategy</li>
+            <li>New : Reflection tools (dynamic surrotgate, type merger)</li>
+            <li>Improved : Added new simple methods to EncryptionInfo</li>
+            <li>Improved : Response filters can now accept compressed content</li>
+            <li>Fixed : IP Address in DnnContext</li>
+            <li>Fixed : UI issues and improved labels</li>
+        </ul>
+        <h4>Version 1.8.5</h4>
+        <ul>
+            <li>Fixed : UrlControlEditControl life cycle</li>
+            <li>Fixed : LinkClick dependency on httpcontext</li>
+            <li>Fixed : DictionaryEditControl import</li>
+            <li>Improved : Serialization performance optimisation for SerializableList</li>
+        </ul>
+        <h4>Version 1.8.4</h4>
+        <ul>
+            <li>New: HtmlScrap Entity</li>
+            <li>New: String transformation operations</li>
+            <li>Improved: Open Xml Support</li>
+            <li>Improved: New parameters to optimize Dynamic Expressions</li>
+            <li>Fixed: Several minor bugs</li>
+            <li>Fixed: Several Optimizations</li>
+            <li>Fixed: ScheduleInfo</li>
+            <li>Fixed: HtmlInputDate, HtmlJsSlider, UploadControl</li>
+            <li>Fixed: Internalized DomainName parsing</li>
+        </ul>
+        <h4>Version 1.8.3</h4>
+        <ul>
+            <li>New: xslx controller in Aricie.Documents</li>
+            <li>New: Event based Response filter</li>
+            <li>New: Improved string filters</li>
+            <li>New: Improved XPath features</li>
+            <li>New: Flee Expression debug options.</li>
+            <li>Fixed: Object Actions dynamic event handlers.</li>
+            <li>Fixed: Output Caching strategy with sample use in PKP module</li>
+            <li>Fixed: FleeExpression builder</li>
+        </ul>
+        <h4>Version 1.8.2</h4>
+        <ul>
+            <li>New: Standalone ScheduleInfo class</li>
+            <li>New: HttpHandlers multiple registration</li>
+            <li>Fixed: tabs and accordion postback navigation in property editor</li>
+            <li>Fixed: FleeExpression builder</li>
+        </ul>
+        <h4>Version 1.8.1</h4>
+        <ul>
+            <li>Updated font-awesome to include latest icons</li>
+            <li>UI/Property editor fixes</li>
+        </ul>
+        <h4>Version 1.8.0</h4>
+        <ul>
+            <li>New: Expression Builder to design Flee Expressions</li>
+            <li>New: Cryptographic helpers and configuration classes</li>
+            <li>Improvement: Many fixes and improvements with property editor</li>
+            <li>Improvement: Token Replace Property explorer now has a restricted mode for additional security</li>
+            <li>Improvement: Better variables, types and object manipulation</li>
+            <li>Fixed: smart file and flee bugs</li>
+            <li>Fixed: Removed Exception while trying to read unsuported files</li>
+            <li>Improvement: several performance tweaks</li>
+        </ul>
+        <h4>Version 1.7.13</h4>
+        <ul>
+            <li>Fix: SelectorControl crash with a null datasource</li>
+            </ul>
+            <h4>Version 1.7.12</h4>
+            <ul>
+                <li>Fixes: Property editor Sub-Navigation optimization</li>
+                <li>New: Awesome Font wrapper and property editor integration</li>
+                <li>New: SmartThreadPool integration: TaskQueues are now based on SmartThreadPool library with dynamic resources alocation and performance counters integration</li>
+                <li>New: Smart Files: Generic entity storage based on dnn db files</li>
+            </ul>
+            <h4>Version 1.7.11</h4>
+            <ul>
+                <li>New: Property Editor Sub navigation</li>
+                <li>Minor fixes in Aricie.DNN</li>
+            </ul>
+            <h4>Version 1.7.10</h4>
+            <ul>
+                <li>Minor fixes in Aricie.Core</li>
+            </ul>
+            <h4>Version 1.7.9</h4>
+            <ul>
+                <li>Fixed: Property Editor Panel sections cookies activated</li>
+                <li>New: Easier .Net Type Editor </li>
+            </ul>
+            <h4>Version 1.7.8</h4>
+            <ul>
+                <li>Version tracking for LuceneSearch 1.8</li>
+            </ul>
+            <h4>Version 1.7.7</h4>
+            <ul>
+                <li>Fixes in Property Editor: list import/export</li>
+            </ul>
+            <h4>Version 1.7.6</h4>
+            <ul>
+                <li>Fixes in Property Editor</li>
+            </ul>
+            <h4>Version 1.7.5</h4>
+            <ul>
+                <li>Fixes in Property Editor</li>
+                <li>New: Advanced String Filters</li>
+            </ul>
+            <h4>Version 1.7.4</h4>
+            <ul>
+                <li>New packaging</li>
+                <li>Minor fixes in Aricie.DNN</li>
+            </ul>
+</div>
+</div>
