@@ -51,8 +51,9 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DotNetNuke">
-      <HintPath>Libs\Aricie.DNN\external\dnn481\DotNetNuke.dll</HintPath>
+    <Reference Include="DotNetNuke, Version=4.8.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>external\DotNetNuke.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
@@ -118,13 +119,6 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Content Include="web.config" />
-    <None Include="web.Debug.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
-    <None Include="web.Release.config">
-      <DependentUpon>web.config</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="DownloadFile.ashx" />
@@ -134,6 +128,7 @@
     <None Include="external\SD.LLBLGen.Pro.DQE.SqlServer.NET20.dll" />
     <None Include="external\SD.LLBLGen.Pro.ORMSupportClasses.NET20.dll" />
     <Content Include="external\AjaxControlToolkit.dll" />
+    <Content Include="external\DotNetNuke.dll" />
     <Content Include="external\SD.LLBLGen.Pro.DQE.Access.NET20.dll" />
     <Content Include="external\SD.LLBLGen.Pro.LinqSupportClasses.NET35.dll" />
     <Content Include="ReleaseNotes.html" />
@@ -146,20 +141,13 @@
     <Content Include="Aricie.Modules.Liste.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Libs\Aricie.Core\Aricie.Core.vbproj">
+    <ProjectReference Include="SharedLibs\Aricie.Core\Aricie.Core.vbproj">
       <Project>{6ada6635-4f81-4900-b392-dc0fd650fa52}</Project>
       <Name>Aricie.Core</Name>
-      <Private>True</Private>
     </ProjectReference>
-    <ProjectReference Include="Libs\Aricie.DNN\Aricie.DNN.vbproj">
+    <ProjectReference Include="SharedLibs\Aricie.DNN\Aricie.DNN.vbproj">
       <Project>{79f9c77d-3b12-4111-b3c3-f006c7026580}</Project>
       <Name>Aricie.DNN</Name>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="Libs\Aricie.Documents\Aricie.Documents.vbproj">
-      <Project>{1b02dd78-6984-4f2e-a525-eeb71da36670}</Project>
-      <Name>Aricie.Documents</Name>
-      <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

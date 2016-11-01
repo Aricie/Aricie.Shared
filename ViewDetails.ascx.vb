@@ -1,5 +1,4 @@
-﻿Imports DotNetNuke.Framework.Providers
-Imports DotNetNuke.Services.Localization
+﻿
 Imports DotNetNuke.Entities.Modules
 
 Imports Aricie.Services
@@ -7,9 +6,6 @@ Imports Aricie.Shared.Components
 Imports Aricie.DNN.Services
 
 Imports System.IO
-Imports System.Configuration
-Imports System.Web.Configuration
-Imports System.Data.SqlClient
 
 Partial Public Class ViewDetails
     Inherits DotNetNuke.Entities.Modules.PortalModuleBase
@@ -41,7 +37,7 @@ Partial Public Class ViewDetails
 #Region "Private Sub"
 
     Private Sub BindModuleList()
-        Dim modList As ArrayList = Aricie.DNN.Services.NukeHelper.DesktopModuleController.GetDesktopModules
+        Dim modList As ArrayList = NukeHelper.DesktopModuleController.GetDesktopModules()
         Dim aricieModList As New List(Of AricieModuleInfo)
 
         If File.Exists(ConfigPath) Then

@@ -1,14 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Aricie.Core", "Libs\Aricie.Core\Aricie.Core.vbproj", "{6ADA6635-4F81-4900-B392-DC0FD650FA52}"
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Aricie.DNN", "Libs\Aricie.DNN\Aricie.DNN.vbproj", "{79F9C77D-3B12-4111-B3C3-F006C7026580}"
-EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Aricie.Documents", "Libs\Aricie.Documents\Aricie.Documents.vbproj", "{1B02DD78-6984-4F2E-A525-EEB71DA36670}"
-EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Aricie.Shared", "Aricie.Shared.vbproj", "{335FC18A-07C9-4009-8F24-05CEA975BD84}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{39C861FC-91C3-4B7E-9014-FC7DD0E4008E}"
@@ -17,34 +11,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Aricie.Shared.dnn5 = Aricie.Shared.dnn5
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aricie.DNN7", "Libs\Aricie.DNN\Aricie.DNN7\Aricie.DNN7.csproj", "{7F0E38C5-DCB6-4902-A113-5D63E79773EB}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Aricie.Core", "SharedLibs\Aricie.Core\Aricie.Core.vbproj", "{6ADA6635-4F81-4900-B392-DC0FD650FA52}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Aricie.DNN", "SharedLibs\Aricie.DNN\Aricie.DNN.vbproj", "{79F9C77D-3B12-4111-B3C3-F006C7026580}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aricie.DNN7", "SharedLibs\Aricie.DNN\Aricie.DNN7\Aricie.DNN7.csproj", "{7F0E38C5-DCB6-4902-A113-5D63E79773EB}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Aricie.Documents", "SharedLibs\Aricie.Documents\Aricie.Documents.vbproj", "{1B02DD78-6984-4F2E-A525-EEB71DA36670}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 6
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs36
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Libs\\Aricie.Core\\Aricie.Core.vbproj
-		SccProjectName1 = Libs/Aricie.Core
-		SccLocalPath1 = Libs\\Aricie.Core
-		SccProjectUniqueName2 = Libs\\Aricie.DNN\\Aricie.DNN.vbproj
-		SccProjectName2 = Libs/Aricie.DNN
-		SccLocalPath2 = Libs\\Aricie.DNN
-		SccProjectUniqueName3 = Libs\\Aricie.Documents\\Aricie.Documents.vbproj
-		SccProjectName3 = Libs/Aricie.Documents
-		SccLocalPath3 = Libs\\Aricie.Documents
-		SccProjectUniqueName4 = Aricie.Shared.vbproj
-		SccLocalPath4 = .
-		SccProjectUniqueName5 = Libs\\Aricie.DNN\\Aricie.DNN7\\Aricie.DNN7.csproj
-		SccProjectName5 = Libs/Aricie.DNN/Aricie.DNN7
-		SccLocalPath5 = Libs\\Aricie.DNN\\Aricie.DNN7
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{335FC18A-07C9-4009-8F24-05CEA975BD84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{335FC18A-07C9-4009-8F24-05CEA975BD84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{335FC18A-07C9-4009-8F24-05CEA975BD84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{335FC18A-07C9-4009-8F24-05CEA975BD84}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6ADA6635-4F81-4900-B392-DC0FD650FA52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6ADA6635-4F81-4900-B392-DC0FD650FA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6ADA6635-4F81-4900-B392-DC0FD650FA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -53,18 +37,14 @@ Global
 		{79F9C77D-3B12-4111-B3C3-F006C7026580}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79F9C77D-3B12-4111-B3C3-F006C7026580}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79F9C77D-3B12-4111-B3C3-F006C7026580}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B02DD78-6984-4F2E-A525-EEB71DA36670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B02DD78-6984-4F2E-A525-EEB71DA36670}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B02DD78-6984-4F2E-A525-EEB71DA36670}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B02DD78-6984-4F2E-A525-EEB71DA36670}.Release|Any CPU.Build.0 = Release|Any CPU
-		{335FC18A-07C9-4009-8F24-05CEA975BD84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{335FC18A-07C9-4009-8F24-05CEA975BD84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{335FC18A-07C9-4009-8F24-05CEA975BD84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{335FC18A-07C9-4009-8F24-05CEA975BD84}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F0E38C5-DCB6-4902-A113-5D63E79773EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7F0E38C5-DCB6-4902-A113-5D63E79773EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F0E38C5-DCB6-4902-A113-5D63E79773EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F0E38C5-DCB6-4902-A113-5D63E79773EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B02DD78-6984-4F2E-A525-EEB71DA36670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B02DD78-6984-4F2E-A525-EEB71DA36670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B02DD78-6984-4F2E-A525-EEB71DA36670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B02DD78-6984-4F2E-A525-EEB71DA36670}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
